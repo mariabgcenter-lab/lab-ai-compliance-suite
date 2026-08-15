@@ -1,5 +1,4 @@
 # Laboratory AI & Quality Control Suite
-# Laboratory AI & Quality Control Suite
 
 🚀 **Live Interactive App:** [Launch Dashboard](https://<your-app-name>.streamlit.app)
 An interactive Streamlit application designed for clinical diagnostics, industrial QA/QC, and ISO-compliant laboratory workflows.
