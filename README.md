@@ -1,6 +1,6 @@
 # Laboratory AI & Quality Control Suite
 
-🚀 **Live Interactive App:** [Launch Dashboard] ([Launch dashboard](https://mariabgcenter-lab.streamlit.app))
+🚀 **Live Interactive App:** [Launch Dashboard] https://lab-ai-compliance-suite-icr9e9zehffzgw8qj4fdb2.streamlit.app/
 An interactive Streamlit application designed for clinical diagnostics, industrial QA/QC, and ISO-compliant laboratory workflows.
 
 ## Included Modules
