@@ -5,4 +5,4 @@ scikit-image
 scipy
 matplotlib
 altair
-
+PyPDF2
