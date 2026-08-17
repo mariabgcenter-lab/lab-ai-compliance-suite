@@ -3,18 +3,20 @@ import streamlit as st
 # ---------------------------------------------------------
 # Page Header
 # ---------------------------------------------------------
-st.title("Biofilm Image Analyzer (Coming Soon)")
+st.title("BiofilmAI Lab Suite — Biofilm Image Analyzer")
 
 st.write(
-    "This module will support the microscopy component of the BiofilmAI multimodal system. "
-    "It will allow users to upload fluorescence or brightfield biofilm images and preview segmentation, "
-    "biomass estimation, live/dead ratios, and feature extraction for downstream machine learning."
+    "This module supports the BiofilmAI multimodal prediction system by processing fluorescence "
+    "and brightfield microscopy images used in Project B. It will preview segmentation, biomass "
+    "estimation, live/dead channel separation, and feature extraction relevant to biofilm formation research."
 )
+
+st.markdown("---")
 
 # ---------------------------------------------------------
 # Module Preview
 # ---------------------------------------------------------
-st.subheader("Module Preview")
+st.subheader("📘 Module Preview")
 
 st.write(
     "The Biofilm Image Analyzer will include the following capabilities once implemented:"
@@ -33,10 +35,8 @@ st.info(
     "This module is currently under development as part of the BiofilmAI multimodal prediction system."
 )
 
-# ---------------------------------------------------------
-# Coming Soon Notice
-# ---------------------------------------------------------
 st.markdown("---")
+
 st.write(
     "Additional functionality will be added once the image preprocessing and segmentation pipelines "
     "from the BiofilmAI project are integrated."
