@@ -1,8 +1,21 @@
 streamlit
 pandas
 numpy
+matplotlib
 scikit-image
 scipy
-matplotlib
 altair
 PyPDF2
+
+# Machine Learning
+scikit-learn
+
+# Deep Learning (BiofilmNN, future CNN/Vision Transformer)
+torch
+torchvision
+
+# File handling (Excel)
+openpyxl
+
+# Bioinformatics utilities
+biopython
