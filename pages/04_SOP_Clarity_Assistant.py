@@ -66,4 +66,6 @@ if st.button("Run Clarity Check", type="primary"):
     st.markdown("---")
 
     if len(missing) == 0:
-        st.success("🎉 This SOP/protocol contains all major clarity
+        st.success("🎉 This SOP/protocol contains all major clarity components.")
+    else:
+        st.warning("⚠️ Some clarity components are missing. Consider revising the document.")
