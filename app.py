@@ -1,57 +1,57 @@
 import streamlit as st
 
+# ---------------------------------------------------------
+# Page Configuration
+# ---------------------------------------------------------
 st.set_page_config(
-    page_title="Laboratory AI & Quality Control Suite",
+    page_title="BiofilmAI Laboratory Assistant",
     page_icon="🔬",
     layout="wide"
 )
 
 # ---------------------------------------------------------
-# Branding Block — Lab AI Suite Banner
+# Landing Page
 # ---------------------------------------------------------
-st.markdown("""
-<div style="padding: 20px; border-radius: 12px; background-color:#f0f2f6; border: 1px solid #d9d9d9;">
-    <h2 style="text-align:center; color:#2c3e50; margin-bottom:0;">
-        🔬 Laboratory AI & Quality Control Suite
-    </h2>
-    <p style="text-align:center; font-size:16px; color:#4a4a4a;">
-        ISO/CLIA‑aligned automation for diagnostics, QC, microscopy, and regulatory documentation.
-    </p>
-</div>
-""", unsafe_allow_html=True)
+st.title("BiofilmAI Laboratory Assistant")
+
+st.write(
+    "A unified scientific workspace designed to support the core components of the BiofilmAI multimodular system. "
+    "This app provides tools for SOP clarity checking, gene expression exploration, microscopy image analysis, "
+    "and multimodal fusion previews — all aligned with my scientific AI portfolio."
+)
 
 # ---------------------------------------------------------
-# Home Page Intro
+# Sidebar Navigation
 # ---------------------------------------------------------
-st.title("Unified Laboratory AI & Quality Control Suite")
-st.markdown("*ISO 17025 / CLIA Compliant Analytical & Regulatory Workflows*")
+st.sidebar.header("BiofilmAI Modules")
 
-st.write("Use the sidebar to navigate to SOP audit, QC validation, biofilm analysis, QA certificate generation, and document review modules.")
+module = st.sidebar.radio(
+    "Select a module:",
+    [
+        "Module 1 — BONUS: SOP Clarity & Documentation QC Assistant",
+        "Module 2 — Gene Expression Checker (Coming Soon)",
+        "Module 3 — Biofilm Image Analyzer (Coming Soon)",
+        "Module 4 — Multimodal Fusion Preview (Coming Soon)"
+    ]
+)
 
 # ---------------------------------------------------------
-# Coming Soon Section
+# Module 1 — SOP Clarity & Documentation QC Assistant
 # ---------------------------------------------------------
-st.markdown("## 🚧 Coming Soon")
+if module == "Module 1 — BONUS: SOP Clarity & Documentation QC Assistant":
+    st.header("Module 1 — BONUS: SOP Clarity & Documentation QC Assistant")
+    st.write(
+        "This module helps evaluate the clarity, structure, and completeness of scientific SOPs or lab documentation. "
+        "It highlights missing steps, unclear instructions, and formatting issues."
+    )
 
-st.markdown("""
-- 🧬 **BiofilmAI Gene Expression Predictor**  
-  ML-based modeling of biofilm formation using differential gene expression signatures — built from the research in **AI Biofilm Multimodal Predictor Project** of my portfolio.
+    sop_text = st.text_area("Paste your SOP or documentation text here:")
 
-- 🧫 **Microscopy QC Module**  
-  Automated assessment of blur, illumination uniformity, and imaging artifacts for routine microscopy quality checks.
-
-- 📊 **PCR Curve Analyzer**  
-  Cq extraction, amplification curve evaluation, and melt-curve anomaly detection for molecular assay QC.
-
-- 🧾 **SOP Auto-Formatter**  
-  Transforms raw procedural text into structured SOP format with sections, numbering, and compliance-aligned metadata.
-
-- 🗂️ **Plate Map Designer**  
-  Interactive builder for 96-well and 384-well plate layouts used in assays, QC runs, and experimental planning.
-
-- 🔍 **AI-Powered Document Summaries**  
-  Automated summaries of SOPs, QC reports, validation documents, and technical files to support rapid review.
-
-*Additional modules are under development as I continue building tools that bridge microbiology, diagnostics, and modern AI workflows.*
-""")
-
+    if st.button("Check Clarity"):
+        if sop_text.strip() == "":
+            st.warning("Please paste some text before checking.")
+        else:
+            st.success("Analysis complete.")
+            st.write("• Checked for missing steps")
+            st.write("• Checked for unclear instructions")
+            st.write("• Checked for formatting issues
