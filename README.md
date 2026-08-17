@@ -56,3 +56,18 @@ It helps researchers assess **whether a document is well‑structured**, **scien
 
 ---
 
+## ⚙️ Quick Features
+- Modular multipage Streamlit architecture  
+- Real‑time microscopy segmentation previews  
+- Transcriptomic feature exploration  
+- Multimodal dataset construction  
+- SOP/protocol summarization  
+- Scientific document clarity review  
+
+---
+
+## 📁 Requirements (Pinned Versions)
+
+The BiofilmAI Lab Suite uses a fully pinned environment for stability and reproducibility.  
+Your `requirements.txt` should contain:
+
