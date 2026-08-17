@@ -8,7 +8,6 @@ from skimage import filters, morphology, segmentation
 
 st.title("🧫 Biofilm Live/Dead Fluorescence Analyzer")
 
-st.header("🧫 Biofilm Live/Dead Fluorescence Analyzer (Computer Vision)")
 st.markdown("Segment dual-channel fluorescence micro-images using H-maxima marker-controlled watershed segmentation to quantify cell counts, biomass, and viability ratios.")
 
 col_param, col_input = st.columns([1, 2])
