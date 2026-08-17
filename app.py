@@ -41,7 +41,7 @@ st.markdown("""
   Automated assessment of blur, illumination uniformity, and imaging artifacts for routine microscopy quality checks.
 
 - 📊 **PCR Curve Analyzer**  
-  Ct extraction, amplification curve evaluation, and melt-curve anomaly detection for molecular assay QC.
+  Cq extraction, amplification curve evaluation, and melt-curve anomaly detection for molecular assay QC.
 
 - 🧾 **SOP Auto-Formatter**  
   Transforms raw procedural text into structured SOP format with sections, numbering, and compliance-aligned metadata.
