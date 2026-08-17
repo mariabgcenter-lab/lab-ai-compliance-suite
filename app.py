@@ -6,7 +6,52 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🔬 Unified Laboratory AI & Quality Control Suite")
+# ---------------------------------------------------------
+# Branding Block — Lab AI Suite Banner
+# ---------------------------------------------------------
+st.markdown("""
+<div style="padding: 20px; border-radius: 12px; background-color:#f0f2f6; border: 1px solid #d9d9d9;">
+    <h2 style="text-align:center; color:#2c3e50; margin-bottom:0;">
+        🔬 Laboratory AI & Quality Control Suite
+    </h2>
+    <p style="text-align:center; font-size:16px; color:#4a4a4a;">
+        ISO/CLIA‑aligned automation for diagnostics, QC, microscopy, and regulatory documentation.
+    </p>
+</div>
+""", unsafe_allow_html=True)
+
+# ---------------------------------------------------------
+# Home Page Intro
+# ---------------------------------------------------------
+st.title("Unified Laboratory AI & Quality Control Suite")
 st.markdown("*ISO 17025 / CLIA Compliant Analytical & Regulatory Workflows*")
 
-st.write("Use the sidebar to navigate to SOP audit, QC validation, and biofilm analysis modules.")
+st.write("Use the sidebar to navigate to SOP audit, QC validation, biofilm analysis, QA certificate generation, and document review modules.")
+
+# ---------------------------------------------------------
+# Coming Soon Section
+# ---------------------------------------------------------
+st.markdown("## 🚧 Coming Soon")
+
+st.markdown("""
+- 🧬 **BiofilmAI Gene Expression Predictor**  
+  ML‑powered prediction of biofilm formation using differential gene expression (Project A).
+
+- 🧫 **Microscopy QC Module**  
+  Automated blur detection, illumination uniformity checks, and artifact flagging.
+
+- 📊 **PCR Curve Analyzer**  
+  Ct extraction, amplification curve QC, and melt‑curve anomaly detection.
+
+- 🧾 **SOP Auto‑Formatter**  
+  Converts raw text into structured SOP format with sections, numbering, and compliance tags.
+
+- 🗂️ **Plate Map Designer**  
+  Interactive 96‑well / 384‑well plate layout builder for assays and QC runs.
+
+- 🔍 **AI‑Powered Document Summaries**  
+  Automatic summaries of SOPs, QC reports, and validation documents.
+
+Stay tuned — the suite is actively expanding.
+""")
+
