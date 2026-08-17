@@ -1,71 +1,55 @@
 import streamlit as st
 
-# ---------------------------------------------------------
-# Page Header
-# ---------------------------------------------------------
-st.title("BiofilmAI Lab Suite — SOP & Protocol Clarity Assistant")
+st.title("🧪 SOP & Protocol Summary Assistant")
 
 st.write(
-    "This module supports the BiofilmAI multimodal prediction system by helping clarify and interpret "
-    "scientific SOPs, protocols, and workflows used in biofilm, AMR, and molecular biology research."
+    "Summarizes SOPs, protocols, and step-by-step workflows to provide a clear overview of "
+    "what the document contains and what the experiment is about."
 )
 
 st.markdown("---")
 
-# ---------------------------------------------------------
-# SOP Input
-# ---------------------------------------------------------
 st.subheader("📄 Paste SOP or Protocol Text")
 
 sop_text = st.text_area(
-    "Paste your SOP or protocol here:",
+    "Paste SOP or protocol here:",
     height=300,
-    placeholder="Paste scientific workflow text here..."
+    placeholder="Paste your SOP/protocol text..."
 )
 
-# ---------------------------------------------------------
-# Clarity Checks
-# ---------------------------------------------------------
-clarity_items = [
-    "purpose",
-    "materials",
-    "equipment",
-    "procedure",
-    "conditions",
-    "notes",
-    "safety",
-    "expected results"
-]
+if st.button("Generate SOP Summary", type="primary"):
+    st.markdown("### 📝 SOP Summary")
 
-if st.button("Run Clarity Check", type="primary"):
-    st.markdown("### 🔍 Clarity Review Results")
-
-    missing = []
-    present = []
-
-    lower_sop = sop_text.lower()
-
-    for item in clarity_items:
-        if item in lower_sop:
-            present.append(item)
-        else:
-            missing.append(item)
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.success("✔ Sections Detected")
-        for p in present:
-            st.write(f"• {p.capitalize()}")
-
-    with col2:
-        st.error("❌ Sections Not Found")
-        for m in missing:
-            st.write(f"• {m.capitalize()}")
-
-    st.markdown("---")
-
-    if len(missing) == 0:
-        st.success("🎉 This SOP/protocol contains all major clarity components.")
+    if len(sop_text.strip()) == 0:
+        st.warning("Please paste SOP text before summarizing.")
     else:
-        st.warning("⚠️ Some clarity components are missing. Consider revising the document.")
+        # Simple section extraction
+        sections = {
+            "Purpose": ["purpose", "objective", "goal"],
+            "Materials": ["materials", "reagents", "supplies"],
+            "Equipment": ["equipment", "instruments", "tools"],
+            "Procedure": ["procedure", "steps", "protocol"],
+            "Conditions": ["conditions", "temperature", "incubation", "timing"],
+            "Safety": ["safety", "hazards", "ppe"],
+            "Expected Results": ["results", "outcome", "observation"]
+        }
+
+        lower_sop = sop_text.lower()
+
+        for title, keywords in sections.items():
+            st.markdown(f"#### {title}")
+            extracted = []
+
+            for kw in keywords:
+                if kw in lower_sop:
+                    extracted.append(kw)
+
+            if extracted:
+                st.write(f"Section detected based on keywords: {', '.join(extracted)}")
+                st.write("Summary:")
+                st.write(f"- This SOP contains information related to **{title.lower()}**.")
+            else:
+                st.write("No explicit section detected.")
+            st.markdown("---")
+
+        st.success("SOP summary generated.")
