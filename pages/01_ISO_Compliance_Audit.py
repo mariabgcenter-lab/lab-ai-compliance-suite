@@ -1,37 +1,51 @@
 import streamlit as st
 
-st.title("📋 ISO Compliance & Document Audit Assistant")
-st.markdown("Automatically reviews SOPs, technical reports, and validation documents for missing ISO/CLIA‑required elements.")
+# ---------------------------------------------------------
+# Page Header
+# ---------------------------------------------------------
+st.title("SOP Clarity & Documentation QC Assistant")
 
-st.subheader("Paste Document Text for Compliance Review")
-
-doc_text = st.text_area(
-    "Document Under Audit:",
-    height=300,
-    placeholder="Paste SOP, technical report, validation summary, or QC documentation here..."
+st.write(
+    "This module evaluates the clarity, structure, and completeness of scientific SOPs or laboratory documentation. "
+    "It highlights missing steps, unclear instructions, formatting issues, and logical flow problems."
 )
 
-required_items = {
-    "calibration": "Calibration verification or tolerance documentation",
-    "tolerance": "Instrument tolerance or acceptance limits",
-    "expiration": "Reagent expiration dates",
-    "lot": "Reagent or consumable lot numbers",
-    "negative control": "Negative control documentation",
-    "positive control": "Positive control documentation",
-    "internal control": "Internal control (IC) documentation",
-    "maintenance": "Maintenance logs or instrument service records",
-    "acceptance criteria": "Defined acceptance criteria for run validity",
-    "instrument": "Instrument ID or serial number"
+# ---------------------------------------------------------
+# Input Section
+# ---------------------------------------------------------
+st.subheader("Paste SOP or Documentation Text")
+
+doc_text = st.text_area(
+    "Document Under Review:",
+    height=300,
+    placeholder="Paste SOP, protocol, workflow, or documentation text here..."
+)
+
+# ---------------------------------------------------------
+# Clarity Criteria
+# ---------------------------------------------------------
+clarity_checks = {
+    "step": "Presence of clearly numbered procedural steps",
+    "materials": "Materials, reagents, or equipment listed",
+    "purpose": "Clear statement of purpose or objective",
+    "scope": "Defined scope or applicability",
+    "safety": "Safety notes or precautions included",
+    "conditions": "Experimental conditions or parameters described",
+    "expected result": "Expected outcomes or acceptance criteria",
+    "references": "References or supporting documents cited"
 }
 
-if st.button("Run ISO/CLIA Compliance Audit", type="primary"):
-    st.markdown("### 🔍 Compliance Audit Findings")
+# ---------------------------------------------------------
+# Run Analysis
+# ---------------------------------------------------------
+if st.button("Run Clarity Review"):
+    st.markdown("### Clarity Review Findings")
 
     lower_doc = doc_text.lower()
     present = []
     missing = []
 
-    for key, description in required_items.items():
+    for key, description in clarity_checks.items():
         if key in lower_doc:
             present.append(description)
         else:
@@ -40,18 +54,18 @@ if st.button("Run ISO/CLIA Compliance Audit", type="primary"):
     col1, col2 = st.columns(2)
 
     with col1:
-        st.success("✔ Documented Elements")
+        st.success("Documented Elements")
         for item in present:
             st.write(f"• {item}")
 
     with col2:
-        st.error("❌ Missing Required Elements")
+        st.error("Missing Elements")
         for item in missing:
             st.write(f"• {item}")
 
     st.markdown("---")
 
     if len(missing) == 0:
-        st.success("🎉 Document meets ISO/CLIA documentation requirements.")
+        st.success("The document appears complete and well‑structured.")
     else:
-        st.warning("⚠️ Document requires revision before approval.")
+        st.warning("The document may require revision to improve clarity and completeness.")
