@@ -35,23 +35,23 @@ st.markdown("## 🚧 Coming Soon")
 
 st.markdown("""
 - 🧬 **BiofilmAI Gene Expression Predictor**  
-  ML‑powered prediction of biofilm formation using differential gene expression (Project A).
+  ML-based modeling of biofilm formation using differential gene expression signatures — built from the research in **Project 1** of my portfolio.
 
 - 🧫 **Microscopy QC Module**  
-  Automated blur detection, illumination uniformity checks, and artifact flagging.
+  Automated assessment of blur, illumination uniformity, and imaging artifacts for routine microscopy quality checks.
 
 - 📊 **PCR Curve Analyzer**  
-  Ct extraction, amplification curve QC, and melt‑curve anomaly detection.
+  Ct extraction, amplification curve evaluation, and melt-curve anomaly detection for molecular assay QC.
 
-- 🧾 **SOP Auto‑Formatter**  
-  Converts raw text into structured SOP format with sections, numbering, and compliance tags.
+- 🧾 **SOP Auto-Formatter**  
+  Transforms raw procedural text into structured SOP format with sections, numbering, and compliance-aligned metadata.
 
 - 🗂️ **Plate Map Designer**  
-  Interactive 96‑well / 384‑well plate layout builder for assays and QC runs.
+  Interactive builder for 96-well and 384-well plate layouts used in assays, QC runs, and experimental planning.
 
-- 🔍 **AI‑Powered Document Summaries**  
-  Automatic summaries of SOPs, QC reports, and validation documents.
+- 🔍 **AI-Powered Document Summaries**  
+  Automated summaries of SOPs, QC reports, validation documents, and technical files to support rapid review.
 
-Stay tuned — the suite is actively expanding.
+*Additional modules are under development as I continue building tools that bridge microbiology, diagnostics, and modern AI workflows.*
 """)
 
