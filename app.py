@@ -35,7 +35,7 @@ st.markdown("## 🚧 Coming Soon")
 
 st.markdown("""
 - 🧬 **BiofilmAI Gene Expression Predictor**  
-  ML-based modeling of biofilm formation using differential gene expression signatures — built from the research in **Project 1** of my portfolio.
+  ML-based modeling of biofilm formation using differential gene expression signatures — built from the research in **Project ** AI Biofilm Multimodal Predictor** of my portfolio.
 
 - 🧫 **Microscopy QC Module**  
   Automated assessment of blur, illumination uniformity, and imaging artifacts for routine microscopy quality checks.
