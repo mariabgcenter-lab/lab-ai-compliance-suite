@@ -1,90 +1,73 @@
-# Laboratory AI & Quality Control Suite
+# BiofilmAI Lab Suite
 
 🚀 **Live Interactive App:** https://lab-ai-compliance-suite-icr9e9zehffzgw8qj4fdb2.streamlit.app/
 
-A unified Streamlit application designed for **clinical diagnostics**, **industrial QA/QC**, and **ISO‑compliant laboratory workflows**.  
-This suite centralizes document auditing, QC validation, microscopy analysis, and certificate generation into a single interactive platform.
+The BiofilmAI Lab Suite is a unified Streamlit application designed to support multimodal prediction of biofilm formation using gene expression data, microscopy features, and structured scientific documentation.  
+This suite provides an integrated scientific environment for exploring transcriptomic patterns, analyzing biofilm images, previewing multimodal fusion, and working with research‑related documents.
 
 ---
 
 ## 📦 Included Modules
 
-### 1. **ISO Compliance & Document Audit Assistant**
-Automatically reviews SOPs, technical reports, validation documents, and QC summaries for missing ISO/CLIA‑required elements such as:
-- calibration tolerances  
-- reagent expiration dates  
-- lot numbers  
-- negative/positive/internal control documentation  
-- maintenance logs  
-- acceptance criteria  
-- instrument IDs  
-
-Provides instant compliance flags aligned with **ISO 17025** and **CLIA** expectations.
+### 1. **Gene Expression Checker**
+Supports **Project A** of BiofilmAI by allowing users to upload gene expression tables and preview:
+- required columns (gene, logFC, p‑value, adj p‑value)  
+- summary statistics  
+- significantly up/down‑regulated genes  
+- volcano plot previews  
+- exportable feature tables for ML modeling  
 
 ---
 
-### 2. **Biofilm Live/Dead Fluorescence Analyzer**
-Computer‑vision module for dual‑channel fluorescence microscopy:
-- H‑maxima watershed segmentation  
-- live/dead cell counts  
-- biomass quantification  
-- viability & mortality ratios  
-- RGB overlay visualization  
-
-Ideal for microbial ecology, biofilm research, and microscopy QC.
-
----
-
-### 3. **Diagnostic Batch QC Validator**
-Evaluates diagnostic assay batch runs using:
-- Negative Control (NC) checks  
-- Positive Control (PC) Ct thresholds  
-- Internal Control (IC) suitability  
-- Sample‑level extraction failures  
-
-Generates annotated batch tables and automated **QA release decisions**.
+### 2. **Biofilm Image Analyzer**
+Supports **Project B** by processing fluorescence and brightfield microscopy images:
+- denoising and normalization  
+- channel separation  
+- watershed segmentation previews  
+- biomass and cell‑count estimation  
+- live/dead ratio estimation  
+- exportable image‑derived feature tables  
 
 ---
 
-### 4. **QA Certificate Generator**
-Creates downloadable, ISO‑aligned QA release certificates:
-- batch metadata  
-- assay target  
-- instrument & analyst  
-- NC/PC/IC status  
-- flagged samples  
-- timestamped audit trail  
-
-Exports a clean `.txt` certificate for regulatory documentation.
+### 3. **Multimodal Fusion Hub**
+Supports **Project C** by previewing how gene expression and microscopy features combine:
+- upload gene‑derived feature tables  
+- upload image‑derived feature tables  
+- feature alignment and normalization  
+- combined feature vector visualization  
+- early‑stage multimodal model previews  
+- export unified multimodal datasets  
 
 ---
 
-### 5. **Laboratory Document Review Assistant**
-Automated document reviewer for:
-- SOPs  
-- QC summaries  
-- technical validation reports  
-- assay documentation  
+### 4. **SOP & Protocol Clarity Assistant**
+A support module for BiofilmAI research workflows:
+- paste SOPs or protocols  
+- detect clarity components (purpose, materials, procedure, conditions, safety, notes)  
+- identify missing sections  
+- assist in organizing scientific workflows used in biofilm and AMR research  
 
-Flags missing required elements such as:
-- lot numbers  
-- expiration dates  
-- tolerances  
-- acceptance criteria  
-- instrument IDs  
+---
 
-Provides a general‑purpose document completeness check complementary to the ISO compliance module.
+### 5. **Universal Scientific Summarizer**
+A general‑purpose scientific document summarizer:
+- summarize SOPs  
+- summarize protocols  
+- summarize scientific articles  
+- summarize methods sections  
+- summarize technical reports  
+- extract key sections and main findings  
 
 ---
 
 ## ⚙️ Quick Features
-- Interactive sliders and parameter tuning  
-- Real‑time microscopy segmentation  
-- Automated QC decision logic  
-- Downloadable QA certificates  
-- Document compliance auditing  
-- ISO/CLIA‑aligned rule‑based checks  
-- Fully modular multipage Streamlit architecture  
+- Modular multipage Streamlit architecture  
+- Real‑time microscopy segmentation previews  
+- Transcriptomic feature exploration  
+- Multimodal dataset construction  
+- Scientific workflow clarity checks  
+- Universal document summarization  
 
 ---
 
