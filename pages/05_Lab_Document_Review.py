@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title("📑 Laboratory Document Review Assistant")
-st.markdown("Automated ISO/CLIA‑aligned document review for SOPs, technical reports, QC summaries, and validation documents.")
+st.markdown("Automated CLIA‑aligned document review for SOPs, technical reports, QC summaries, and validation documents.")
 
 st.subheader("Upload or Paste Document Text")
 
