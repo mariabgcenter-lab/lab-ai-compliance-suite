@@ -9,13 +9,15 @@ This suite centralizes document auditing, QC validation, microscopy analysis, an
 
 ## 📦 Included Modules
 
-### 1. **ISO Compliance & SOP Audit Assistant**
-Automatically reviews SOPs, technical reports, and validation documents for missing regulatory elements such as:
+### 1. **ISO Compliance & Document Audit Assistant**
+Automatically reviews SOPs, technical reports, validation documents, and QC summaries for missing ISO/CLIA‑required elements such as:
 - calibration tolerances  
 - reagent expiration dates  
-- negative/positive control documentation  
+- lot numbers  
+- negative/positive/internal control documentation  
 - maintenance logs  
 - acceptance criteria  
+- instrument IDs  
 
 Provides instant compliance flags aligned with **ISO 17025** and **CLIA** expectations.
 
@@ -64,7 +66,14 @@ Automated document reviewer for:
 - technical validation reports  
 - assay documentation  
 
-Flags missing required elements such as lot numbers, expiration dates, tolerances, acceptance criteria, and instrument IDs.
+Flags missing required elements such as:
+- lot numbers  
+- expiration dates  
+- tolerances  
+- acceptance criteria  
+- instrument IDs  
+
+Provides a general‑purpose document completeness check complementary to the ISO compliance module.
 
 ---
 
