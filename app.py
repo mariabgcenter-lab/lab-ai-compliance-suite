@@ -19,6 +19,9 @@ st.write(
 
 st.markdown("---")
 
+# ---------------------------------------------------------
+# About BiofilmAI
+# ---------------------------------------------------------
 st.subheader("📘 About BiofilmAI")
 st.write(
     "BiofilmAI is a scientific machine learning project focused on predicting biofilm formation "
@@ -28,6 +31,9 @@ st.write(
 
 st.markdown("---")
 
+# ---------------------------------------------------------
+# Available Modules
+# ---------------------------------------------------------
 st.subheader("🧪 Available Modules")
 
 st.markdown("""
@@ -43,6 +49,9 @@ st.markdown("""
 
 st.markdown("---")
 
+# ---------------------------------------------------------
+# Navigation Note
+# ---------------------------------------------------------
 st.write(
     "Use the navigation menu on the left to explore each module."
 )
