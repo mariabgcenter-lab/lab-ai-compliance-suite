@@ -48,7 +48,7 @@ st.markdown("""
 
 ### **BiofilmAI Support Modules**
 - **SOP & Protocol Summary Assistant** — Summarize procedural scientific workflows (SOPs, protocols, JoVE-style methods)  
-- **Laboratory Document Review Assistant** — Evaluate scientific documents for conceptual clarity and completeness  
+- **Scientific Document Summarization Module** — Summarize scientific documents to extract experimental purpose, workflow context, and key scientific content  
 """)
 
 st.markdown("---")
