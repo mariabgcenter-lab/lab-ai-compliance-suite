@@ -1,6 +1,6 @@
 # BiofilmAI Lab Suite
 
-🚀 **Live Interactive App:**  
+**Live Interactive App:**  
 https://lab-ai-compliance-suite-icr9e9zehffzgw8qj4fdb2.streamlit.app/
 
 The **BiofilmAI Lab Suite** is a unified Streamlit application designed to support multimodal prediction of biofilm formation using gene expression data, microscopy features, and structured scientific documentation.  
@@ -8,7 +8,7 @@ This suite provides an integrated scientific environment for exploring transcrip
 
 ---
 
-## 📦 Included Modules
+## Included Modules
 
 ### 1. **Gene Expression Checker**
 Supports **Project A** of BiofilmAI by allowing users to upload gene expression tables and preview:
@@ -55,7 +55,7 @@ This module provides a concise overview of **what the document contains** and **
 
 ---
 
-## ⚙️ Quick Features
+## Quick Features
 - Modular multipage Streamlit architecture  
 - Real‑time microscopy segmentation previews  
 - Transcriptomic feature exploration  
@@ -65,7 +65,7 @@ This module provides a concise overview of **what the document contains** and **
 
 ---
 
-## 📁 Requirements
+## Requirements
 The BiofilmAI Lab Suite uses a simplified, unpinned environment for compatibility and reproducibility.  
 Your `requirements.txt` should contain:
 
