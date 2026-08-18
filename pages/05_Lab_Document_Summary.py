@@ -4,7 +4,7 @@ import re
 # ---------------------------------------------------------
 # Module Header
 # ---------------------------------------------------------
-st.title("📘 Scientific Document Summarization Module")
+st.title("📘 Scientific Document Summary Module")
 
 st.write(
     "Summarizes scientific documents—including methods, workflows, technical notes, and "
