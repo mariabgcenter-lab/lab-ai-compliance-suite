@@ -119,4 +119,5 @@ if st.button("Run Document Review", type="primary"):
 
         if len(missing) == 0:
             st.success("🎉 Document contains all major scientific sections.")
-        else
+        else:
+            st.warning("⚠️ Document is missing important scientific components.")
