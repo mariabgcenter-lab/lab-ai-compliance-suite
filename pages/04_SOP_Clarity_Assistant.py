@@ -9,19 +9,73 @@ st.write(
 
 st.markdown("---")
 
-st.subheader("📄 Paste SOP or Protocol Text")
+# ---------------------------------------------------------
+# File Upload Section
+# ---------------------------------------------------------
+st.subheader("📄 Upload SOP or Protocol Document")
 
-sop_text = st.text_area(
+uploaded_file = st.file_uploader(
+    "Upload SOP or protocol (PDF, TXT, DOCX)",
+    type=["pdf", "txt", "docx"]
+)
+
+sop_text = ""
+
+# ---------------------------------------------------------
+# Extract Text from Uploaded File
+# ---------------------------------------------------------
+if uploaded_file:
+
+    # PDF extraction
+    if uploaded_file.type == "application/pdf":
+        try:
+            import PyPDF2
+            reader = PyPDF2.PdfReader(uploaded_file)
+            sop_text = "\n".join(page.extract_text() or "" for page in reader.pages)
+        except Exception:
+            st.error("Unable to read PDF file.")
+
+    # TXT extraction
+    elif uploaded_file.type == "text/plain":
+        try:
+            sop_text = uploaded_file.read().decode("utf-8")
+        except Exception:
+            st.error("Unable to read TXT file.")
+
+    # DOCX extraction
+    elif uploaded_file.type == "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
+        try:
+            import docx
+            doc = docx.Document(uploaded_file)
+            sop_text = "\n".join([para.text for para in doc.paragraphs])
+        except Exception:
+            st.error("Unable to read DOCX file.")
+
+# ---------------------------------------------------------
+# Fallback Manual Paste
+# ---------------------------------------------------------
+st.subheader("📄 Or Paste SOP/Protocol Text")
+
+manual_text = st.text_area(
     "Paste SOP or protocol here:",
     height=300,
     placeholder="Paste your SOP/protocol text..."
 )
 
+# If upload succeeded, use uploaded text; otherwise use manual text
+if sop_text.strip() == "":
+    sop_text = manual_text
+
+st.markdown("---")
+
+# ---------------------------------------------------------
+# Summary Button
+# ---------------------------------------------------------
 if st.button("Generate SOP Summary", type="primary"):
     st.markdown("### 📝 SOP Summary")
 
     if len(sop_text.strip()) == 0:
-        st.warning("Please paste SOP text before summarizing.")
+        st.warning("Please upload or paste SOP text before summarizing.")
     else:
         # Simple section extraction
         sections = {
