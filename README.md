@@ -49,10 +49,9 @@ It helps researchers quickly understand **what the SOP contains**, **what the ex
 
 ---
 
-### 5. **Laboratory Document Review Assistant**
-Evaluates scientific documents for conceptual clarity and completeness.  
-Designed for publications, methods sections, research workflows, technical notes, and other non‑procedural scientific text, this module identifies missing scientific sections such as background, objectives, methods, results, discussion, and limitations.  
-It helps researchers assess **whether a document is well‑structured**, **scientifically coherent**, and **contains all major conceptual components**, without summarizing procedural content.
+### 5. **Scientific Document Summarization Module**
+Summarizes scientific documents — including methods, workflows, technical notes, and publications — to extract the main purpose, experimental context, and key scientific content.  
+This module provides a concise overview of **what the document contains** and **what the study or experiment is about**, supporting rapid scientific interpretation without performing structural or completeness analysis.
 
 ---
 
@@ -62,12 +61,11 @@ It helps researchers assess **whether a document is well‑structured**, **scien
 - Transcriptomic feature exploration  
 - Multimodal dataset construction  
 - SOP/protocol summarization  
-- Scientific document clarity review  
+- Scientific document summarization  
 
 ---
 
-## 📁 Requirements (Pinned Versions)
-
-The BiofilmAI Lab Suite uses a fully pinned environment for stability and reproducibility.  
+## 📁 Requirements
+The BiofilmAI Lab Suite uses a simplified, unpinned environment for compatibility and reproducibility.  
 Your `requirements.txt` should contain:
 
