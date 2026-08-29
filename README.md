@@ -5,23 +5,7 @@ https://lab-ai-compliance-suite-icr9e9zehffzgw8qj4fdb2.streamlit.app/
 The BiofilmAI Lab Suite is a unified Streamlit application designed to support multimodal prediction of biofilm formation using gene expression data, microscopy features, and structured scientific documentation.
 This suite provides an integrated scientific environment for exploring transcriptomic patterns, analyzing biofilm images, previewing multimodal fusion, and working with research‑related documents.
 
-🗂️ Application Directory Structure
-This repository contains the interactive deployment code and multi-page Streamlit dashboard modules:
-
-lab-ai-compliance-suite/
-├── pages/                             # Multi-page Streamlit App Pages
-│   ├── 01_Gene_Expression_Checker.py  # Transcriptomic feature explorer (Project A)
-│   ├── 02_Biofilm_Image_Analyzer.py    # Bioimage segmentation frontend (Project B)
-│   ├── 03_Multimodal_Fusion.py         # Cross-modal feature alignment hub (Project C)
-│   ├── 04_SOP_Summary_Assistant.py     # Procedural workflow summarizer
-│   └── 05_Scientific_Document_Summary.py # Key scientific term extractor
-├── app.py                             # Main Streamlit entrance script
-├── requirements.txt                   # Application dependencies
-└── README.md                          # Repository documentation
 Included Modules
-Our interactive environment separates primary research predictions from literature/compliance onboarding into two distinct segments:
-
-I. Research & Project-Focused Modules
 1. Gene Expression Checker
 Supports Project A of BiofilmAI by allowing users to upload gene expression tables and preview:
 
@@ -48,7 +32,6 @@ feature alignment and normalization
 combined feature vector visualization
 early‑stage multimodal model previews
 export unified multimodal datasets
-II. Operational & Literature Review Modules
 4. SOP & Protocol Summary Assistant
 Summarizes procedural scientific documents such as SOPs, JoVE protocols, and step‑by‑step experimental workflows.
 This module extracts the core components of a procedure — including purpose, materials, equipment, steps, conditions, safety, and expected results — and presents them as a structured overview.
@@ -58,13 +41,13 @@ It helps researchers quickly understand what the SOP contains, what the experime
 Summarizes scientific documents — including methods, workflows, technical notes, and publications — to extract the main purpose, experimental context, and key scientific content.
 This module provides a concise overview of what the document contains and what the study or experiment is about, supporting rapid scientific interpretation without performing structural or completeness analysis.
 
-
-
-
-
-
-
-
-Good content
-Bad content
-Gemini Notebook can be inaccurate; please double check its responses.
+Quick Features
+Modular multipage Streamlit architecture
+Real‑time microscopy segmentation previews
+Transcriptomic feature exploration
+Multimodal dataset construction
+SOP/protocol summarization
+Scientific document summarization
+Requirements
+The BiofilmAI Lab Suite uses a simplified, unpinned environment for compatibility and reproducibility.
+Your requirements.txt should contain:
