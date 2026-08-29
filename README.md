@@ -14,24 +14,25 @@ summary statistics
 significantly up/down‑regulated genes
 volcano plot previews
 exportable feature tables for ML modeling
+
 2. Biofilm Image Analyzer
 Supports Project B by processing fluorescence and brightfield microscopy images:
-
 denoising and normalization
 channel separation
 watershed segmentation previews
 biomass and cell‑count estimation
 live/dead ratio estimation
 exportable image‑derived feature tables
+
 3. Multimodal Fusion Hub
 Supports Project C by previewing how gene expression and microscopy features combine:
-
 upload gene‑derived feature tables
 upload image‑derived feature tables
 feature alignment and normalization
 combined feature vector visualization
 early‑stage multimodal model previews
 export unified multimodal datasets
+
 4. SOP & Protocol Summary Assistant
 Summarizes procedural scientific documents such as SOPs, JoVE protocols, and step‑by‑step experimental workflows.
 This module extracts the core components of a procedure — including purpose, materials, equipment, steps, conditions, safety, and expected results — and presents them as a structured overview.
