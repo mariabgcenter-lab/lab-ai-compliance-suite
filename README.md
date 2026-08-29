@@ -58,35 +58,12 @@ It helps researchers quickly understand what the SOP contains, what the experime
 Summarizes scientific documents — including methods, workflows, technical notes, and publications — to extract the main purpose, experimental context, and key scientific content.
 This module provides a concise overview of what the document contains and what the study or experiment is about, supporting rapid scientific interpretation without performing structural or completeness analysis.
 
-Quick Features
-Modular multipage Streamlit architecture
-Real‑time microscopy segmentation previews
-Transcriptomic feature exploration
-Multimodal dataset construction
-SOP/protocol summarization
-Scientific document summarization
-Requirements
-The BiofilmAI Lab Suite uses a simplified, unpinned environment for compatibility and reproducibility.
-Your requirements.txt should contain:
 
-streamlit
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-joblib
-PyPDF2
-python-docx
-📬 Academic & Professional Profiles
-Explore my peer-reviewed publications, open-source code repositories, and professional networks:
 
-Portfolio Showcase: Maria BG Scientific Portfolio
-ORCID: 0000-0002-7525-4262
-Google Scholar: Maria BG Profile
-LinkedIn: maria-burgos-garay
-GitHub: mariabgcenter-lab
-© 2026 Maria BG Scientific. Developed under an agile, open-science model at the intersection of advanced microbiology, clinical data standards, and AI-driven biological discovery.
+
+
+
+
 
 Good content
 Bad content
