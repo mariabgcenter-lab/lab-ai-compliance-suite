@@ -8,7 +8,6 @@ This suite provides an integrated scientific environment for exploring transcrip
 Included Modules
 1. Gene Expression Checker
 Supports Project A of BiofilmAI by allowing users to upload gene expression tables and preview:
-
 required columns (gene, logFC, p‑value, adj p‑value)
 summary statistics
 significantly up/down‑regulated genes
